@@ -1,6 +1,22 @@
 
+nav {
+  background-color: darkblue;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  display: block;
+  padding: 20px;
+}
+
+
 main {
     max-width: 840px;
+}
+
+h1 {
+  color: darkblue;
 }
 
 aside {
