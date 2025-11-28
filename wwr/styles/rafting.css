@@ -84,7 +84,7 @@ nav, p, section, article {
 
 .hero article img {
     float: right;
-    width: 150px;
+    width: 130px;
     border: 1px solid black;
     box-shadow: 0 0 15px gray;
 }
