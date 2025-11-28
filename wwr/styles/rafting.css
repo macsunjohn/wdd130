@@ -85,6 +85,7 @@ nav, p, section, article {
 
 .hero {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .hero article {
@@ -159,11 +160,10 @@ footer p {
    }
 
    /* History Section */
-
-   .history-section {
-    border: 2px solid #333;
+.history-section {
+    border: 1px solid #333;
     padding: 20px;
-    max-width: 900px;
+    width: 840px;
     margin: auto;
 }
 
@@ -177,51 +177,53 @@ footer p {
     grid-template-columns: 1fr auto 1fr;
     gap: 20px;
     align-items: center;
-    margin-top: 20px;
-     border: 2px solid #333;
+    margin-top: 5px;
 }
 
 .history-image img {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
 }
+
 
 /* Adventure Section */
 
 .adventure-section {
-    border: 2px solid #333;
+    border: 1px solid #333;
     padding: 20px;
-    max-width: 950px;
+    width: 840px;
+    margin: auto;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+   
+ 
 }
 
 .adventure-section h2 {
     text-align: center;
     margin-top: 0;
-    font-weight: bold;
 }
 
 .gallery {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
-.gallery {
+figure {
     text-align: center;
+    
 }
 
-.gallery img {
+figure img {
     width: 150px;
     height: 150px;
     background-color: #ddd;
     object-fit: cover;
-    margin: 5px;
 }
 
-.gallery figcaption {
+figure figcaption {
     margin-top: 8px;
     font-size: 16px;
     color: #444;
