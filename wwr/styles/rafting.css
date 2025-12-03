@@ -359,6 +359,48 @@ figure figcaption {
     border: 2px solid #ccc;
 }
 
+/* --- Form Layout --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* --- Inputs and Textarea --- */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cfcfcf;
+    border-radius: 4px;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* --- Radio Buttons --- */
+.radio-group {
+    margin: 10px 0 5px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    margin-left: 5px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+
 /* Employee Profiles */
 .employee-profiles {
     margin: 40px 0;
@@ -416,19 +458,30 @@ figure figcaption {
     gap: 10px;
 }
 
-/* Submit Button */
-.contact-submit-btn {
-    background-color: #5A67D8;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    cursor: pointer;
+/* --- Checkbox --- */
+.contact-form .newsletter {
     margin-top: 10px;
-    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
 }
 
-.contact-submit-btn:hover {
-    background-color: #434AA1;
+.contact-form .newsletter label {
+    margin-left: 6px;
+    font-weight: normal;
+}
+
+/* --- Submit Button --- */
+.contact-form button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #d3d3d3;
+    border: 2px solid #bfbfbf;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #c2c2c2;
 }
