@@ -12,7 +12,9 @@
 
 <body>
 
-    <!-- HEADER (replace with your real one if different) -->
+    <!-- ===================== -->
+    <!--      HEADER           -->
+    <!-- ===================== -->
     <header>
         <div class="logo">
             <img src="images/logo.jpg" alt="Company Logo">
@@ -27,135 +29,101 @@
         </nav>
     </header>
 
-    <div class="contact-container">
 
-        <div class="contact-map">
-            <img src="images/map-placeholder.jpg" alt="Map">
-        </div>
-
-        <form class="contact-form">
-
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Placeholder">
-
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Placeholder">
-
-            <label>Message Purpose</label>
-
-            <div class="radio-group">
-                <input type="radio" id="general" name="purpose">
-                <label for="general">General Inquiry</label>
-
-                <input type="radio" id="reservation" name="purpose">
-                <label for="reservation">Reservation Question</label>
-
-                <input type="radio" id="suggestion" name="purpose">
-                <label for="suggestion">Website Suggestion</label>
-            </div>
-
-            <label for="message">Message</label>
-            <textarea id="message" placeholder="Type here"></textarea>
-
-            <div class="newsletter">
-                <input type="checkbox" id="subscribe">
-                <label for="subscribe">Please Subscribe me to the monthly newsletter</label>
-            </div>
-
-            <button type="submit">Get in Touch!</button>
-
-        </form>
-
-    </div>
-
+    <!-- ===================== -->
+    <!--         MAIN          -->
+    <!-- ===================== -->
     <main class="contact-page">
 
-        <!-- Company Information -->
+        <!-- =========================================== -->
+        <!-- 1. COMPANY INFORMATION (Centered Heading)    -->
+        <!-- =========================================== -->
         <section class="company-info">
             <h1>White Water Rafting Company</h1>
             <p>123 Main River Street<br>Kolob, California</p>
             <p><strong>Phone:</strong> +1 999 999 9999</p>
             <p><strong>Email:</strong> info@whitewater.com</p>
+        </section>
 
-            <!-- Google Map -->
-            <div class="map-wrapper">
+
+        <!-- ================================================== -->
+        <!-- 2. TWO-COLUMN LAYOUT (MAP LEFT + FORM RIGHT)       -->
+        <!-- ================================================== -->
+        <section class="contact-layout">
+
+            <!-- LEFT SIDE → MAP -->
+            <div class="contact-map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0190887494002!2d-122.41941518468198!3d37.774929279759814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b1c46d1cf%3A0xb5d03d53a0b9afd1!2sRiver%20Adventures!5e0!3m2!1sen!2sus!4v1700100000000"
-                    width="100%" height="300" loading="lazy" allowfullscreen>
+                    loading="lazy" allowfullscreen="">
                 </iframe>
             </div>
-            <!-- Contact Form -->
-            <section class="contact-form-section">
+
+            <!-- RIGHT SIDE → FORM -->
+            <form action="#" method="post" class="contact-form">
+
                 <h2>Send Us a Message</h2>
 
-                <form action="#" method="post" class="contact-form">
+                <label for="fullname">Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Placeholder" required>
 
-                    <label for="fullname">Name</label>
-                    <input type="text" id="fullname" name="fullname" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Placeholder" required>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                <label>Message Purpose</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </div>
 
-                    <fieldset class="purpose-fieldset">
-                        <legend>Message Purpose</legend>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type here" rows="5" required></textarea>
 
-                        <label>
-                            <input type="radio" name="purpose" value="general" required>
-                            General Inquiry
-                        </label>
+                <label class="newsletter">
+                    <input type="checkbox" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
 
-                        <label>
-                            <input type="radio" name="purpose" value="reservation">
-                            Reservation Question
-                        </label>
+                <button type="submit">Get in Touch!</button>
 
-                        <label>
-                            <input type="radio" name="purpose" value="suggestion">
-                            Website Suggestion
-                        </label>
-                    </fieldset>
+            </form>
 
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+        </section>
 
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="subscribe">
-                        Please subscribe me to the monthly newsletter
-                    </label>
 
-                    <button type="submit" class="contact-submit-btn">
-                        Send My Message
-                    </button>
+        <!-- =============================== -->
+        <!-- 3. MEET OUR TEAM GRID SECTION  -->
+        <!-- =============================== -->
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
 
-                </form>
-            </section>
+            <div class="employee-grid">
+
+                <figure>
+                    <img src="images/employee1.jpg" alt="Lead Guide">
+                    <figcaption>Alex Johnson – Lead Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpg" alt="Safety Instructor">
+                    <figcaption>Maria Smith – Safety Instructor</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpg" alt="Rafting Coordinator">
+                    <figcaption>Jordan Lee – Rafting Coordinator</figcaption>
+                </figure>
+
+            </div>
+        </section>
 
     </main>
-    </section>
 
-    <!-- Employee Profiles -->
-    <section class="employee-profiles">
-        <h2>Meet Our Team</h2>
 
-        <div class="employee-grid">
-            <figure>
-                <img src="images/employee1.jpg" alt="Lead Guide">
-                <figcaption>Alex Johnson – Lead Guide</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/employee2.jpg" alt="Safety Instructor">
-                <figcaption>Maria Smith – Safety Instructor</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/employee3.jpg" alt="Rafting Coordinator">
-                <figcaption>Jordan Lee – Rafting Coordinator</figcaption>
-            </figure>
-        </div>
-    </section>
-
-    <!-- FOOTER (replace with your real one if different) -->
+    <!-- ===================== -->
+    <!--        FOOTER        -->
+    <!-- ===================== -->
     <footer>
         <p>&copy; 2025 White Water Rafting Co. | Mark John</p>
         <nav class="socialmedia">
