@@ -324,3 +324,95 @@ figure figcaption {
     color: #444;
     font-weight: bold;
 }
+
+/* CONTACT PAGE LAYOUT */
+.contact-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Company Info */
+.company-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.map-wrapper iframe {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Employee Profiles */
+.employee-profiles {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.employee-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.employee-grid figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* Form Styles */
+.contact-form-section {
+    margin-top: 50px;
+}
+
+.contact-form {
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.purpose-fieldset {
+    border: 1px solid #bbb;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Submit Button */
+.contact-submit-btn {
+    background-color: #5A67D8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+    background-color: #434AA1;
+}
