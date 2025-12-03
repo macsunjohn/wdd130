@@ -21,10 +21,13 @@ header {
   box-sizing: border-box;
 }
 
+/* GENERAL RESET */
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
 }
+
 
 .logo img {
     width: 120px;
@@ -83,10 +86,14 @@ nav, p, section, article {
     text-decoration: none;
 }
 
+/* HERO SECTION */
 .hero {
-  position: relative;
-  margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
 }
+
 
 .hero article {
   position: absolute;
@@ -109,9 +116,97 @@ nav, p, section, article {
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+     object-fit: cover;
     background-color: var(--primary-color);
   }
+
+  .hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    background: rgba(0,0,0,0.55);
+    padding: 15px 25px;
+    color: white;
+    border-radius: 8px;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* COMPANY STORY */
+.company-story {
+    display: flex;
+    max-width: 1100px;
+    margin: 50px auto;
+    gap: 30px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.company-story img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.story-text {
+    max-width: 550px;
+}
+
+/* MISSION SECTION */
+.mission-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f7f7f7;
+}
+
+.mission-image {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* TEAM SECTION */
+.team-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+    padding: 0 20px;
+}
+
+.team-grid img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.team-grid figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 768px) {
+    .company-story {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        left: 20px;
+        right: 20px;
+        text-align: center;
+    }
+}
 
   h1 {
   position: absolute;
