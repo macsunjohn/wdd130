@@ -332,6 +332,15 @@ figure figcaption {
     padding: 40px 20px;
 }
 
+/* --- Contact Page Layout --- */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+    align-items: flex-start;
+}
+
 /* Company Info */
 .company-info {
     text-align: center;
@@ -341,6 +350,13 @@ figure figcaption {
 .map-wrapper iframe {
     border: none;
     border-radius: 5px;
+}
+
+/* --- Map Styling --- */
+.contact-map img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
 }
 
 /* Employee Profiles */
