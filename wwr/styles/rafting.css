@@ -62,7 +62,7 @@ nav a {
     display: block;
     padding: 10px 30px;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-size: 17px;
 }
 
@@ -103,7 +103,6 @@ nav, p, section, article {
   background-color: var(--accent2-color, );
   padding: 16px;
   gap: 16px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   width: 840px;
   opacity: 0.9;
 
@@ -127,7 +126,7 @@ nav, p, section, article {
     left: 40px;
     background: rgba(0,0,0,0.55);
     padding: 15px 25px;
-    color: white;
+    color: #ffffff;
     border-radius: 8px;
 }
 
@@ -151,8 +150,8 @@ nav, p, section, article {
 .hero article img {
     float: right;
     width: 130px;
-    border: 1px solid black;
-    box-shadow: 0 0 15px gray;
+    border: 1px solid #000000;
+    box-shadow: 0 0 15px #808080;
 }
 
 footer {
@@ -343,7 +342,7 @@ button {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-    color: white;
+    color: #ffffff;
 }
 
 button:hover {
@@ -469,5 +468,5 @@ button:hover {
 
 .trip-table th {
     background: #045c8c;
-    color: white;
+    color: #ffffff;
 }
