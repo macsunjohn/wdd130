@@ -25,6 +25,7 @@ footer {
 /* General page layout */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -36,7 +37,7 @@ header {
     background-color: #333;
     color: white;
     padding: 10px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
