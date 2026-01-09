@@ -1,0 +1,22 @@
+:root {
+  /* Colors */
+  --primary-color: steelblue;
+  --heading-color: darkblue;
+  --text-light: #fff;
+  --text-dark: #333;
+  --bg-light: #eee;
+  --bg-box: #ddd;
+  --border-color: #000;
+  --shadow-color: gray;
+
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 15px;
+
+  /* Sizes */
+  --max-width: 840px;
+  --aside-width: 20rem;
+  --nav-font-size: 1.2rem;
+}
